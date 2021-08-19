@@ -20,7 +20,8 @@
   <DOMTree node={doc} bind:hovered bind:selected />
 
   <p class="discription">
-    Midlle click: pan, <br /><kbd>ctrl</kbd> + Mouse weel: zoom
+    Midlle click: pan, <br /><kbd>ctrl</kbd> + Mouse weel: zoom <br />
+    <a href="https://github.com/alex-knyaz/svelte-domtree">Project page</a>
   </p>
 </div>
 
