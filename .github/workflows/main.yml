@@ -1,0 +1,24 @@
+name: Build and deploy
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+          node-version: "14.x"
+    
+    - run: npm install
+    - run: node build
+    - uses: crazy-max/ghaction-github-pages@v1
+      with:
+          target_branch: gh-pages
+          build_dir: public
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
