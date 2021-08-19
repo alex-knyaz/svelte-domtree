@@ -15,7 +15,7 @@ jobs:
           node-version: "14.x"
     
     - run: npm install
-    - run: node build
+    - run: npm run build
     - uses: crazy-max/ghaction-github-pages@v1
       with:
           target_branch: gh-pages
