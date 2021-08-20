@@ -25,16 +25,13 @@
 <PanAndZoom>
   <div bind:this={root} class="root" on:mousemove={mousemove} />
 
-  <!-- COLORS DEFINED IN globals.scss -->
-
   <DOMAnnotations node={hovered} />
-  <!-- style="border: solid 2px #4f555c; outline-offset: 2px;" -->
+
   <DOMAnnotations
     node={selected}
     style="outline: solid 1px #0061ac; outline-offset: -1px;"
   />
 </PanAndZoom>
-<!-- <iframe bind:this={wrapper} src="about:blank"/> -->
 
 <style>
   .root {

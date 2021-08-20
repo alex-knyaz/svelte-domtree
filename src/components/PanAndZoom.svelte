@@ -1,7 +1,7 @@
 <script>
   export let scale = 0.8;
-  export let posX = 0;
-  export let posY = 0;
+  export let posX = 100;
+  export let posY = 100;
 
   const minScale = 0.1;
   const scaleStep = 0.001;
