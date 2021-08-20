@@ -8,3 +8,12 @@ Svelte-domtree is a svelte component visualize DOM similar to DOM tree in Chrome
 ![Screenshot](https://raw.githubusercontent.com/alex-knyaz/svelte-domtree/master/doc/img.png)
 
 
+## Installation 
+
+```
+git clone https://github.com/alex-knyaz/svelte-domtree.git
+cd svelte-domtree
+npm install
+npm run dev
+```
+
